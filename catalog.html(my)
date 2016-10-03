@@ -1,0 +1,259 @@
+<!DOCTYPE html><!--Все тоже самое из певого файла до body  включительно---->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Bootstrap Template</title>
+
+<!-- Bootstrap -->	
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet"><!--Подключение фонт авесом иконок с стороннего сайта--->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--- Навигация из индекса--->
+<div class="navbar navbar-inverse navbar-static-top"><!--Добавление последнего navbar-fixed-top фиксирует меню!!!-->
+<div class="container">
+<div class="navbar-header">
+<button type="button" data-target="#responsive-menu" data-toggle="collapse" class="navbar-toggle">
+<!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">-->
+<span class="sr-only">Открыть навигацию</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button><!--Кнопка которая открывает навигацию --->
+<a class="navbar-brand" href="#">Логотип</a> <!--название есть в "Название сайта"-->
+</div>
+<div class="collapse navbar-collapse" id="responsive-menu"><!--сама навигация-->
+<ul class="nav navbar-nav">
+<li><a href="#">Пункт 1</a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Пункт 2<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="#">Часть1</a></li>
+<li><a href="#">Часть2</a></li>
+<li><a href="#">Чать3</a></li>
+<li class="divider"></li><!--Визуально отделяет чертой! -->
+<li><a href="#">Часть4</a></li>
+</ul>
+</li>
+<li><a href="#">Пункт 3</a></li>	
+<li><a href="#">Пункт 4</a></li>
+</ul>
+<!---Ниже добавляем форму авторизации на сайт--->
+<form action="" class="navbar-form navbar-right">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="E-mail" value=""><!---В разных групформах, чтобы не слипалсись на малых экранах--->
+
+</div>
+<div class="form-group">
+<input type="password" class="form-control" placeholder="Пароль" value="">
+</div>
+<button type="submit" class="btn btn-primary">
+<i class="fa fa-sign-in"></i>Войти<!-- Иконка для входа-->
+</button>
+</form>
+</div>
+</div>
+</div><!--Конец навигации--->
+<!--Хлебные крошки---->
+<div class="container">
+<div class="row">
+<div class="container">
+<ol class="breadcrumb">
+<li><a href="#"><i class="fa fa-home"></i></a></li>
+<li><a href="#">Блог</a></li>
+<li><a href="#">Категория</a></li>
+<li class="activ"><a href="#">Название поста</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="container"><!----Навигация по элементам--->
+<div class="row">
+<div class="container"><!---Для выравнивания ширины содержимого по линиям меню--->
+<ul class="nav nav-tabs"><!---Дополнительная навигация pills можно заменить на  tabs--->
+<li class="active"><a href="#">Элемент 1<span class="badge">8</span></a></li>
+<li><a href="#">Элемент 2<span class="badge">18</span></a></li><!---"badge" количество постов в данной категории--->
+<li><a href="#">Элемент 3<span class="badge">34</span></a></li>
+<li><a href="#">Элемент 4<span class="badge">12</span></a></li>
+</ul>
+<!--<ul class="nav nav-pills">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Menu 1</a></li>
+  <li><a href="#">Menu 2</a></li>
+  <li><a href="#">Menu 3</a></li>
+</ul>-->
+</div>
+<div class="row masonry" data-columns>
+<div class="item"><!---class="col-xs-6 col-sm-4" Классы которые отвечают за сетку удалили при подключении masonry---->
+<div class="thumbnail">
+<img src="http://placehold.it/400x240" alt=""/>
+<div class="caption">
+<h3><a href="#">Название поста</a></h3>
+<p>Много теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разного</p>
+<p>Много теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разного</p><!--Для примера, букв больше чев др.-->
+<a href="#" class="btn btn-success">Подробнее<i class="fa fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+<div class="item"><!---class="col-xs-6 col-sm-4 col-md-3 col-lg-3"  надо 12 картинок интересный вид----><!---class="col-xs-6 col-sm-4" Классы которые отвечают за сетку удалили при подключении masonry---->
+<div class="thumbnail">
+<img src="http://placehold.it/400x240" alt=""/>
+<div class="caption">
+<h3><a href="#">Название поста</a></h3>
+<p>Много теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разного</p>
+<a href="#" class="btn btn-success">Подробнее<i class="fa fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+<div class="item"><!---class="col-xs-6 col-sm-4" Классы которые отвечают за сетку удалили при подключении masonry---->
+<div class="thumbnail">
+<img src="http://placehold.it/400x240" alt=""/>
+<div class="caption">
+<h3><a href="#">Название поста</a></h3>
+<p>Много теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разного</p>
+<a href="#" class="btn btn-success">Подробнее<i class="fa fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+<div class="item"><!---class="col-xs-6 col-sm-4" Классы которые отвечают за сетку удалили при подключении masonry---->
+<div class="thumbnail">
+<img src="http://placehold.it/400x240" alt=""/>
+<div class="caption">
+<h3><a href="#">Название поста</a></h3>
+<p>Много теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разного</p>
+<a href="#" class="btn btn-success">Подробнее<i class="fa fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+	<div class="item"><!---class="col-xs-6 col-sm-4" Классы которые отвечают за сетку удалили при подключении masonry-задали item просто для удобства--->
+		<div class="thumbnail">
+			<img src="http://placehold.it/400x240" alt=""/>
+			<div class="caption">
+				<h3><a href="#">Название поста</a></h3>
+				<p>Много теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разногоМного теста разного</p>
+				<a href="#" class="btn btn-success">Подробнее<i class="fa fa-arrow-right"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!---Foooter site --->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Lorem Ipsum </h3>
+                    <ul>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Lorem Ipsum </h3>
+                    <ul>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Lorem Ipsum </h3>
+                    <ul>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Lorem Ipsum </h3>
+                    <ul>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                    <h3> Lorem Ipsum </h3>
+                    <ul>
+                        <li>
+                            <div class="input-append newsletter-box text-center">
+                                <input type="text" class="full text-center" placeholder="Email ">
+                                <button class="btn  bg-gray" type="button"> Lorem ipsum <i class="fa fa-long-arrow-right"> </i> </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left"> Copyright © Footer E-commerce Plugin 2014. All right reserved. </p>
+            <div class="pull-right">
+                <ul class="nav nav-pills payments">
+                    <li><i class="fa fa-cc-visa"></i></li>
+                    <li><i class="fa fa-cc-mastercard"></i></li>
+                    <li><i class="fa fa-cc-amex"></i></li>
+                    <li><i class="fa fa-cc-paypal"></i></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
+<!----Окна оповещений об ошибках---->
+<div class="container">
+	<div class="alert alert-danger alert-dismissible">
+	любое содержимое alert-danger
+	</div>
+	<div class="alert alert-warning">
+	<button type="button" class="close" data-dismiss="alert">
+	<i class="fa fa-times fa-fm"></i>
+	</button>
+	<h4>Добро пожаловать!</h4>
+	<p>alert-warning</p>
+	<p><button type="button" class="btn btn-default">ОК</button>
+	<button type="button" class="btn btn-danger">Отмена</button></p>
+	</div>
+	<div class="alert alert-success">
+	<strong>alert</strong>-success <a href="#"class="alert-link">Клик</a>
+	</div>
+	<div class="alert alert-info">
+	alert-info
+	</div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --><!---Все что ниже тоже из  html---->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script src="js/salvattore.min.js"></script>
+</body>
+</html>
